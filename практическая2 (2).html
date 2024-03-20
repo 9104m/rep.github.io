@@ -1,0 +1,169 @@
+
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="практическая2 (1).css">
+	<link rel="preconnect" href="https://fonts.googleapis.com"> <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <link href="https: //fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+	<link rel="shortcut icon" href="img/ikon.png" />
+	<title>PawPal</title>
+</head>
+<body>
+	<div class="header">
+
+		<div class="container">	
+
+			<div class="header-line">
+
+				<div class="header-logo">
+					<a href="практическая.html">
+						<img src="img/logo.png">
+					</a>
+				</div>
+
+				<div class="nav">
+					<a class="nav-iten" href="практическая4.html">О компании</a>
+					<a class="nav-iten" href="практическая3.html">Каталог</a>
+					<a class="nav-iten" href="практическая2 (2).html">Оплата и доставка</a>
+					<a class="nav-iten" href="1.html">Животные</a>
+					<a class="nav-iten" href="практическая5.html">Акции</a>
+				</div>
+
+				<div class="cart">
+					
+					<a href="@">
+						<img src="img/cart.png">
+					</a>
+					
+				</div>
+
+				<div class="men">
+
+					<a href="@">
+						<img src="img/men.png">
+					</a>
+
+				</div>
+
+				<div class="lupa">
+					
+					<a href="@">
+						<img src="img/lupa.png">
+					</a>
+
+				</div>
+
+				<div class="phone">
+						<div class="phone-holder">
+							<div class="phone-img">
+								<img src="img/phone.png">
+							</div>
+
+							<div class="number">
+								<a class="num" href="#">8 (800) 551-59-44</a> 
+							</div>
+						</div>
+					<div class="phone-text">
+					ежедневно <br> с 7:00 до 19:00
+					</div>
+				</div>
+				
+
+			</div>
+
+		</div>
+
+	</div>
+
+	<div class="oplata">
+		<p> Оплата и доставка </p>
+
+		<div id="dd" class="wrapper" tabindex="1">
+			 <span>Город: Нижнекамск</span>
+			 <ul class="dropdown">
+			 <li><a href="#"><i class="icon-envelope icon-large"></i>Казань</a></li>
+			 <li><a href="#"><i class="icon-truck icon-large"></i>Набережные Челны</a></li>
+			 <li><a href="#"><i class="icon-plane icon-large"></i>Нефтекамск</a></li>
+			 <li><a href="#"><i class="icon-plane icon-large"></i>Нурлат</a></li>
+			 <li><a href="#"><i class="icon-plane icon-large"></i>Тетюши</a></li>
+			 <li><a href="#"><i class="icon-plane icon-large"></i>Чистополь</a></li>
+
+			 </ul>
+ 		</div>
+
+	</div>
+
+		
+		<div class="g">
+			<img src="img/88.png">
+		<span>Условия доставки до пункта выдачи PawPal</span>
+
+		<p class="p2">По республике Татарстан:<br>
+		г.Казань, г.Набережные Челны, г.Нижнекамск, г.Альметьевск, г.Бугульма</p>
+		<p class="p3">● Бесплатная доставка до пункта выдачи от 1 000 рублей.<br>
+			● Оформить заказ можно только на сайте vetna.info.<br>
+			● Заказ можно оплатить только банковской картой на сайте.<br>
+			● Заказы выдаются только в зоомагазинах по указанным в корзине адресам.
+		</p>
+		</div>
+
+		<div class="g2">
+			<img src="img/j.png">
+
+			<p class="p4"> Способ оплаты заказа </p>
+			<p class="p5"> ● Банковской картой на сайте.</p>
+			<p class="p6"> Правила оплаты банковской картой</p>
+			<p class="p7"> Для оплаты товара с помощью банковской карты на соответствующей странице необходимо выбрать способ оплаты "Онлайн оплата банковской картой". Оплата происходит через ПАО СБЕРБАНК с использованием Банковских карт следующих платежных систем:</p>
+
+			<div class="p8">
+				<img src="img/77.png" class="p8">
+			</div><br>	
+
+			<p><br></p>
+
+			<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+			<script type="text/javascript">
+			
+					function DropDown(el) {
+						this.dd = el;
+						this.placeholder = this.dd.children('span');
+						this.opts = this.dd.find('ul.dropdown > li');
+						this.val = '';
+						this.index = -1;
+						this.initEvents();
+					}
+					DropDown.prototype = {
+						initEvents : function() {
+							var obj = this;
+
+							obj.dd.on('click', function(event){
+								$(this).toggleClass('active');
+								return false;
+							});
+
+							obj.opts.on('click',function(){
+								var opt = $(this);
+								obj.val = opt.text();
+								obj.index = opt.index();
+								obj.placeholder.text(obj.val);
+							});
+						},
+						getValue : function() {
+							return this.val;
+						},
+						getIndex : function() {
+							return this.index;
+						}
+					}
+
+					$(function() {
+
+						var dd = new DropDown( $('#dd') );
+
+						$(document).click(function() {
+							// all dropdowns
+							$('.wrapper-dropdown-3').removeClass('active');
+						});
+
+					});
+
+</body>
+</html>

@@ -1,0 +1,179 @@
+body {
+	margin: 0;
+	font-family: "Open Sans", sans-serif;
+	background-image: url(https://i.pinimg.com/564x/1b/77/fe/1b77fe51029eb7d42012c6c22f2d54e2.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.container{
+	margin: 0px 166px;
+
+}
+.header{
+	background-color: white;
+	margin-bottom: 30px;
+}
+.header-logo img {
+	width: 150px;
+	height: 150px;
+}
+
+.cart img {
+	width: 25px;
+	height: 25px;
+	transition: all .2s ease-out;
+}
+
+.cart img:hover {
+	margin-top: -10px;
+}
+
+.men img {
+	width: 25px;
+	height: 25px;
+	transition: all .2s ease-out;
+}
+
+.men img:hover {
+	margin-top: -10px;
+}
+
+.lupa img{
+	width: 25px;
+	height: 25px;
+	transition: all .2s ease-out;
+}
+
+.lupa img:hover{
+	margin-top: -10px;
+}
+
+.phone-img img{
+	width: 25px;
+	height: 25px;
+}
+
+.header-line{
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+
+}
+
+.nav-iten{
+	text-decoration: none;
+	color: #3a3030;
+	font-weight: 700;
+	font-size: 20px;
+	margin-right: 20px;
+	background-image: linear-gradient(currentColor, currentColor);
+    	background-position: 0% 100%;
+    	background-repeat: no-repeat;
+    	background-size: 0% 2px;
+    	transition: background-size .3s;
+}
+
+.nav-iten:hover{
+	color: #db7093;
+	background-size: 100% 2px;
+}
+
+
+.num {
+	text-decoration: none;
+	color: #3a3030;
+	font-weight: 700;
+	font-size: 20px;
+}
+
+.phone-text{
+	color: #937776;
+	font-weight: 400;
+	font-size: 20px;
+}
+
+.phone-holder{
+	display: flex;
+	align-items: center;
+}
+
+.mySlides img{
+	vertical-align: center;
+	left: 100px;
+	border-radius: 15px;
+}
+
+.photo {
+	max-width: 1000px;
+	position: relative;
+	margin-left: 390px;
+	margin-top: 100px;
+	box-shadow: 0px 5px 10px 0px rgba(0,0,0, 0.5);
+
+
+}
+
+.prev {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      padding: 16px;
+      margin-top: -22px;
+      color: #8a2be2;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+}
+
+.next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+
+      width: auto;
+      padding: 16px;
+      margin-top: -22px;
+      color: #8a2be2;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+      right: -190px;
+      border-radius: 3px 0 0 3px;
+
+}
+
+
+
+.prev:hover{
+	 margin-left: -10px;
+}
+
+.next:hover{
+	 margin-right: -10px;
+}
+
+.dot {
+      cursor: pointer;
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #999999;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+
+      }
+
+.active, .dot:hover {
+      background-color: #111111;
+}
+
+.mySlides {
+	display: none
+}
+      
